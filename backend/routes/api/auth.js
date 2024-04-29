@@ -5,5 +5,5 @@ const route = express.Router();
 
 const app = express();
 
-route.get("/registration", secureApi, registrationController);
+route.post("/registration", secureApi, registrationController);
 module.exports = route;
