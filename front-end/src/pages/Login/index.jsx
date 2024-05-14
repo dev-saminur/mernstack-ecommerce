@@ -16,8 +16,9 @@ const Login = () => {
       email: values.email,
       password: values.password,
     });
-
+    console.log(data);
     setMsg(data.data.success);
+    setMsg(data.data.error);
   };
 
   const onFinishFailed = (errorInfo) => {
