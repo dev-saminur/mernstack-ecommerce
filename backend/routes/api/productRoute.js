@@ -8,6 +8,6 @@ const app = express();
 
 route.post("/creatcategory", addCategoryController);
 route.post("/creatsubcategory", addSubCategoryController);
-route.get("/viewsubcategory", viewSubCategoryController);
+route.get("/allsubcat", viewSubCategoryController);
 
 module.exports = route;
