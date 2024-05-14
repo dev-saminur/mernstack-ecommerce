@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Alert, Space, Input, Form } from "antd";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Registration = () => {
   const [loading, setLoading] = useState(false);
@@ -111,6 +111,7 @@ const Registration = () => {
             >
               Submit
             </Button>
+            <Link to="/forgotpass">Forgot password</Link>
           </Form.Item>
         </Form>
       </div>
